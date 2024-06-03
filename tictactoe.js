@@ -21,7 +21,6 @@ class Board {
 		//x always goes first
 		this.turn = 'X'
 		this.turnCount = 0
-		this.AI = false
 		this.makeRows()
 		console.log(this.printPrettyBoard())
 		this.promptTurn()
@@ -81,10 +80,6 @@ class Board {
 	clearBoard(){
 		this.board = []
 		this.makeRows()
-	}
-
-	toggleAI(){
-		this.AI = !this.AI
 	}
 
 	aiTurn(){
